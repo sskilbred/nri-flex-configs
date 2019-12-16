@@ -5,7 +5,8 @@ name: redisFlex
 apis:
   - name: redis
     entity: ${auto:ip}
-    event_type: RedisSample
+    entity_type: redisFlex
+    event_type: RedisSample2
     commands:
       - dial: ${auto:ip}:6379
         run: "info\r\n"
